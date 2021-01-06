@@ -9,8 +9,10 @@ export class SignInWithAppleWeb extends WebPlugin implements SignInWithApplePlug
     });
   }
 
-  async Authorize(): Promise<{response: any}> {
-    return;
+  async Authorize (): Promise<{response: any}> {
+    return new Promise(resolve => {
+      resolve({ response: null })
+    });
   }
 }
 
